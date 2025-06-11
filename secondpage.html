@@ -86,17 +86,14 @@
       }
     }
 
-    /* Responsive Styling */
-    @media (max-width: 768px) {
-      .frame {
-        width: 90vw;
-        height: auto;
-        aspect-ratio: 550 / 740;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-
+    .frame {
+  position: relative;
+  width: 90vw; /* 90% of viewport width */
+  aspect-ratio: 0.74; /* keeps frame shape (same as 550x740) */
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+}
+    
       .content-box {
         position: absolute;
         top: 13%;
