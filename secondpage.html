@@ -17,12 +17,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       padding: 20px;
+      min-height: 100vh;
     }
 
     .frame {
-      position: relative;
       width: 100%;
       max-width: 550px;
       background: url('background.png') no-repeat center center;
@@ -33,16 +32,14 @@
     }
 
     .content-box {
-      position: relative;
-      margin: 100px auto;
-      padding: 40px 30px;
-      max-height: 540px;
-      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
       color: white;
       text-align: center;
       text-shadow: 1px 1px 2px black;
+      max-height: 80vh;
+      overflow-y: auto;
       animation-delay: 0.4s;
-      background: rgba(0, 0, 0, 0.5);
     }
 
     h1 {
@@ -91,6 +88,21 @@
 
     .blur-in {
       animation: blurIn 1s ease-out forwards;
+    }
+
+    @media (max-width: 480px) {
+      .content-box {
+        padding: 25px 15px;
+        font-size: 0.85em;
+      }
+
+      h1 {
+        font-size: 0.95em;
+      }
+
+      .cinzel {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
