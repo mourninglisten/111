@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>dolletesque</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       background: black;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
     img {
       cursor: pointer;
-      max-width: auto;
-      height: 500px;
+      width: 90%;
+      max-width: 500px;
+      height: auto;
       transition: transform 0.3s ease;
     }
     img:hover {
